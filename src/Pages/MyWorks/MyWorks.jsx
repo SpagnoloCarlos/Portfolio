@@ -16,7 +16,7 @@ const MyWorks = () => {
         </Box>
         <Box>
           <Typography variant="h6" color="initial">
-            FRONTEND + BACKEND
+            FRONTEND + BACKEND h
           </Typography>
         </Box>
       </Box>
