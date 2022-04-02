@@ -98,7 +98,7 @@ const ResponsiveAppBar = () => {
             }}
           >
             <Tabs value={value} onChange={handleChange} centered indicatorColor='secondary'>
-              <Tab disableFocusRipple={true} disableRipple={true} label="HOME" sx={{color: 'white'}} onClick={() => navigate('/')}/>
+              <Tab disableFocusRipple={true} disableRipple={true} label="HOME" sx={{color: 'white'}} onClick={() => navigate('/home')}/>
               <Tab disableFocusRipple={true} disableRipple={true} label="MY WORKS" sx={{color: 'white'}} onClick={() => navigate('my-works')}/>
               <Tab disableFocusRipple={true} disableRipple={true} label="CONTACT" sx={{color: 'white'}}/>
             </Tabs>
