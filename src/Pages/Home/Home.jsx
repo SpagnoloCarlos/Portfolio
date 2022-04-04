@@ -7,7 +7,7 @@ const Home = () => {
       <MainImage />
       <Body />
     </>
-  )
-}
+  );
+};
 
 export default Home;
