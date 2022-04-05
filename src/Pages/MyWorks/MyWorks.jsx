@@ -48,7 +48,7 @@ const MyWorks = () => {
   };
 
   return (
-    <Box>
+    <Box sx={{minHeight: 'calc(100vh - 100px - 64px)'}}>
       <Box
         sx={{
           display: 'flex',

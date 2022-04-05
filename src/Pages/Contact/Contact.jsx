@@ -11,6 +11,7 @@ const Contact = () => {
           alignItems: 'center',
           justifyContent: 'center',
           m: 2,
+          minHeight: 'calc(100vh - 100px - 64px)',
         }}
       >
         <Typography

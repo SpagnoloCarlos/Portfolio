@@ -46,7 +46,7 @@ const ContactCard = () => {
 
   return (
     <Card sx={styles.card}>
-      <Box sx={{ marginTop: 2 }}>
+      <Box sx={{ marginTop: 2, mx: 2 }}>
         <Typography
           variant="h4"
           textAlign="center"
@@ -73,6 +73,7 @@ const ContactCard = () => {
             alignItems: 'center',
             justifyContent: 'center',
             my: 3,
+            mx: 2,
           }}
         >
           <CardContent sx={styles.cardContent_testimonyData}>

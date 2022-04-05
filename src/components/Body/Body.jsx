@@ -13,6 +13,7 @@ const Body = () => {
           flexWrap: 'nowrap',
           justifyContent: 'center',
           my: 5,
+          minHeight: 'calc(100vh - 500px)',
         }}
       >
         <Box

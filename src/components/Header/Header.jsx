@@ -16,7 +16,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 
 import { useNavigate } from 'react-router-dom';
-import './Header.css';
+// import './Header.css';
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -24,7 +24,11 @@ const ResponsiveAppBar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    setValue(parseInt(localStorage.getItem('value')));
+    if (localStorage.getItem('value')) {
+      setValue(parseInt(localStorage.getItem('value')));
+    } else {
+      setValue(0);
+    }
   }, [])
 
   const handleChange = (event, newValue) => {
@@ -100,12 +104,12 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ flex: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'center'}}
+            sx={{ flex: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'center' }}
           >
             HI! I'm Carlos
           </Typography>
 
-          <Box  sx={{flex: 1, display: { xs: 'flex', md: 'none' }}}>
+          <Box sx={{ flex: 1, display: { xs: 'flex', md: 'none' } }}>
 
           </Box>
 
@@ -127,6 +131,9 @@ const ResponsiveAppBar = () => {
                 label="HOME"
                 sx={{
                   color: 'white',
+                  '&.Mui-selected': {
+                    color: '#474e8a',
+                  },
                   fontWeight: '600',
                   fontSize: '16px',
                   textShadow: '0px 0px 5px rgba(150, 150, 150, 1)',
@@ -139,6 +146,9 @@ const ResponsiveAppBar = () => {
                 label="MY WORKS"
                 sx={{
                   color: 'white',
+                  '&.Mui-selected': {
+                    color: '#474e8a',
+                  },
                   fontWeight: '600',
                   fontSize: '16px',
                   textShadow: '0px 0px 5px rgba(150, 150, 150, 1)',
@@ -151,9 +161,13 @@ const ResponsiveAppBar = () => {
                 label="CONTACT"
                 sx={{
                   color: 'white',
+                  '&.Mui-selected': {
+                    color: '#474e8a',
+                  },
                   fontWeight: '600',
                   fontSize: '16px',
                   textShadow: '0px 0px 5px rgba(150, 150, 150, 1)',
+
                 }}
                 onClick={() => navigate('contact')}
               />

@@ -23,6 +23,8 @@ const Footer = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        position: 'relative',
+        bottom: 0,
       }}
     >
       <Box
