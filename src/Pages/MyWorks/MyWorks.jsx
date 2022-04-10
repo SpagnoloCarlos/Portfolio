@@ -43,8 +43,12 @@ const slider2 = [
 ];
 
 const MyWorks = () => {
-  const handleOnIcon = () => {
+  const handleOnIcon1 = () => {
     window.open('https://github.com/SpagnoloCarlos/Pastry-shop', '_blank');
+  };
+  
+  const handleOnIcon2 = () => {
+    window.open('https://github.com/SpagnoloCarlos/GlobalLearning-Final', '_blank');
   };
 
   return (
@@ -113,7 +117,7 @@ const MyWorks = () => {
           <IconButton
             size="large"
             sx={{ marginBottom: 2, width: '70px', height: '70px' }}
-            onClick={handleOnIcon}
+            onClick={handleOnIcon1}
           >
             <GitHubIcon
               sx={{ width: '100%', height: 'auto', color: 'black' }}
@@ -151,6 +155,7 @@ const MyWorks = () => {
           <IconButton
             size="large"
             sx={{ marginBottom: 2, width: '70px', height: '70px' }}
+            onClick={handleOnIcon2}
           >
             <GitHubIcon
               sx={{ width: '100%', height: 'auto', color: 'black' }}
